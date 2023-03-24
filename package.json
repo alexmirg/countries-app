@@ -1,6 +1,7 @@
 {
-  "name": "countries-flags",
-  "version": "0.1.0",
+  "name": "countries-app",
+  "version": "1.0.0",
+  "author": "Oleksii Rohochyi",
   "private": true,
   "dependencies": {
     "axios": "^0.22.0",
