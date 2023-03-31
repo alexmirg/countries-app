@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { setTheme } from "./theme-slice";
 
-const useTheme = () => {
+export const useTheme = () => {
     const dispatch = useDispatch();
     const theme = useSelector(state => state.theme);
     const toggleTheme = () => dispatch(setTheme( theme === 'light' ? 'dark' : 'light'));
@@ -13,6 +13,4 @@ const useTheme = () => {
     }, [theme]);
 
     return [theme, toggleTheme];
-}
-
-export default useTheme;
+};
